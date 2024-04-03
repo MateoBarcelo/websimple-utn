@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <title>Página simple</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log(document.querySelector('.footer-text'))
+            document.querySelector('.footer-text').innerHTML = new Date().getFullYear() + ' - Todos los derechos reservados'
+        })
+    </script>
+    <header>
+        <h1 class="headertitle">
+            Bienvenido a mi página!
+        </h1>
+        <ul class="header-list">
+            <li class="header-item">
+                <p><a href="">Inicio</a></p>
+            </li>
+            <li class="header-item">
+                <p><a href="">Acerca de</a></p>
+            </li>
+            <li class="header-item">
+                <p><a href="">Servicios</a></p>
+            </li>
+            <li class="header-item">
+                <p><a href="">Contacto</a></p>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <h2>Hola!</h2>
+            <p>Bienvenido a mi pagina web, aqui encontraras informacion sobre diversos temas!</p>
+        </div>
+        <div>
+            <h2>Acerca de mi</h2>
+            <p>Me llamo Mateo Barcelo, soy un desarrollador de software y me encanta programar!</p>
+        </div>
+        <div>
+            <h2>Nuestros servicios</h2>
+            <ul>
+                <li>
+                    <p>Desarrollo de software</p>
+                </li>
+                <li>
+                    <p>Desarrollo web</p>
+                </li>
+                <li>
+                    <p>Desarrollo de aplicaciones moviles</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme, puedes encontrarme en: <br> 9 de Julio 2401 <br> Telefono: 3482670235 <br> Correo electronico: <a href="mateobarcelo88@gmail.com">mateobarcelo88@gmail.com</a></p>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text"></p>
+    </footer>
+</body>
+</html>
